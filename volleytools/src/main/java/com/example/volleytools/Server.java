@@ -22,9 +22,9 @@ import java.util.List;
 public abstract class Server {
     private Object ResultType;
 
-    Server(Object resultType) {
-        ResultType = resultType;
-    }
+   // Server(Object resultType) {
+     //   ResultType = resultType;
+    //}
 
     void JasonObjectConnect(final Context context, int method, String Url, final GetJsonObjectResult result) {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(method, Url, null, new Response.Listener<JSONObject>() {
